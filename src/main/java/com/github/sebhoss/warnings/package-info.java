@@ -7,6 +7,8 @@
 /**
  * Constants for @SuppressWarnings annotations.
  */
-@com.github.sebhoss.nullanalysis.NotNullByDefault
+@NonNullByDefault
 package com.github.sebhoss.warnings;
+
+import org.eclipse.jdt.annotation.NonNullByDefault;
 
