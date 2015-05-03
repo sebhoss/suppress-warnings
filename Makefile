@@ -9,3 +9,5 @@ help:
 sonar-analysis:
 	@mvn sonar:sonar -Dsonar.host.url=http://localhost:58200 -Dsonar.jdbc.url=jdbc:postgresql://localhost:58300/sonar
 
+.PHONY: all help sonar-analysis
+
