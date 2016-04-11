@@ -114,7 +114,7 @@ public final class CompilerWarnings {
     /**
      * Suppresses warnings relative to unoptimized access from inner classes
      */
-    public static final String SYNTHETHIC_ACCESS        = "synthethic-access";
+    public static final String SYNTHETIC_ACCESS         = "synthetic-access";
 
     /**
      * Suppresses warnings because of missing synchronize when overriding a synchronized method
