@@ -45,6 +45,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
     <version.bom>3.0.0</version.bom>
+    <skipTests>true</skipTests>
   </properties>
 
 </project>
