@@ -1,3 +1,6 @@
+# https://www.gnu.org/prep/standards/html_node/Makefile-Basics.html#Makefile-Basics
+SHELL = /bin/sh
+
 all: help
 
 help:
@@ -21,6 +24,6 @@ release:
 	@mvn release:prepare release:perform
 
 docker-verify:
-	@docker-compose -f build/docker/build-environment.yml run --rm build
+	@docker-compose -f build/docker/build-environment.yml run --rm --user=$(UID) build
 
 .PHONY: all help sonar-analysis sign-waiver

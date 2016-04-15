@@ -1,15 +1,16 @@
 #
-# This file is part of java-parent. It is subject to the license terms in the LICENSE file found in the top-level
-# directory of this distribution and at http://creativecommons.org/publicdomain/zero/1.0/. No part of java-parent,
+# This file is part of suppress-warnings. It is subject to the license terms in the LICENSE file found in the top-level
+# directory of this distribution and at http://creativecommons.org/publicdomain/zero/1.0/. No part of suppress-warnings,
 # including this file, may be copied, modified, propagated, or distributed except according to the terms contained
 # in the LICENSE file.
 #
 
 build:
-  image: maven:3.3.3-jdk-8
+  image: maven:3.3.9-jdk-8
   volumes:
    - "../../:/code"
+   - "~/.m2/repository/:/repository"
   working_dir: /code
   external_links:
-   - nexus_nexus_1:nexus
-  command: mvn clean verify -s build/docker/settings.xml
+   - nexus_nexus_1:nexu s
+  command: mvn clean verify -s build/docker/settings.xml -Dmaven.repo.local=/repository
