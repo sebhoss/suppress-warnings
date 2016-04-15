@@ -16,7 +16,7 @@
   <parent>
     <groupId>com.github.sebhoss</groupId>
     <artifactId>java-parent</artifactId>
-    <version>1.0.10</version>
+    <version>3.0.0</version>
   </parent>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -47,24 +47,4 @@
     <version.bom>3.0.0</version.bom>
   </properties>
 
-  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <!--                               DEPENDENCIES                              -->
-  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>com.github.sebhoss.bom</groupId>
-        <artifactId>java-bom</artifactId>
-        <version>${version.bom}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
-  <dependencies>
-    <dependency>
-      <groupId>org.eclipse.jdt</groupId>
-      <artifactId>org.eclipse.jdt.annotation</artifactId>
-    </dependency>
-  </dependencies>
 </project>
