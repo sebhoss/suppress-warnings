@@ -28,4 +28,4 @@ docker-verify:
 	# findbugs likes to create these
 	@rm -rf ?/
 
-.PHONY: all help sonar-analysis sign-waiver
+.PHONY: all help sonar-analysis sign-waiver release docker-verify
