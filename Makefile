@@ -25,5 +25,7 @@ release:
 
 docker-verify:
 	@docker-compose -f build/docker/build-environment.yml run --rm --user=$(UID) build
+	# findbugs likes to create these
+	@rm -rf ?/
 
 .PHONY: all help sonar-analysis sign-waiver
