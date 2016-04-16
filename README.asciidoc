@@ -7,7 +7,7 @@ Sebastian Hoß <https://github.com/sebhoss[@sebhoss]>
 image:https://img.shields.io/maven-central/v/{project-group}/{project-name}.svg?style=flat-square["Maven Central", link="https://maven-badges.herokuapp.com/maven-central/{project-group}/{project-name}"]
 image:https://www.ohloh.net/p/{project-name}/widgets/project_thin_badge.gif["Open Hub statistics", link="https://www.ohloh.net/p/{project-name}"]
 image:https://img.shields.io/travis/{github-org}/{project-name}/master.svg?style=flat-square["Build Status", link="https://travis-ci.org/{github-org}/{project-name}"]
-image:https://badges.gitter.im/Join%20Chat.svg["Gitter", link="https://gitter.im/{github-org}/{project-name}"]
+image:https://img.shields.io/gitter/room/{github-org}/{project-name}.svg?maxAge=2592000["Gitter", link="https://gitter.im/{github-org}/{project-name}"]
 
 Constants for `@SuppressWarnings` annotations.
 
@@ -38,10 +38,6 @@ worldwide. This software is distributed without any warranty.
 
 You should have received a copy of the CC0 Public Domain Dedication along
 with this software. If not, see http://creativecommons.org/publicdomain/zero/1.0/.
-
-=== Setup
-
-This projects uses "Java":http://www.java.com/, "Maven":http://maven.apache.org/ and "Git":http://git-scm.com/ as the main development tools. To build the project yourself just download & install at least Maven 3.0 and call *mvn install* inside the project folder. Maven should then proceed to clean, build, package and install this project.
 
 === Versioning
 
