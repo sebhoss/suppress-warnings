@@ -7,4 +7,4 @@
 /**
  * Constants for @SuppressWarnings annotations.
  */
-package com.github.sebhoss.warnings;
+package de.xn__ho_hia.utils.jdt;

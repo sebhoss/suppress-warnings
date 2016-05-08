@@ -14,16 +14,17 @@
   <!--                                 PARENT                                  -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <parent>
-    <groupId>com.github.sebhoss</groupId>
-    <artifactId>java-parent</artifactId>
-    <version>3.0.0</version>
+    <groupId>de.xn__ho_hia.maven.parents</groupId>
+    <artifactId>maven-parents-java-stable</artifactId>
+    <version>0.0.0-SNAPSHOT</version>
   </parent>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               INFORMATIONS                              -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <groupId>de.xn__ho_hia.utils.jdt</groupId>
   <artifactId>suppress-warnings</artifactId>
-  <version>3.0.1-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
   <url>https://github.com/sebhoss/suppress-warnings</url>
   <inceptionYear>2013</inceptionYear>
@@ -44,7 +45,6 @@
   <!--                                PROPERTIES                               -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
-    <version.bom>3.0.0</version.bom>
     <skipTests>true</skipTests>
   </properties>
 

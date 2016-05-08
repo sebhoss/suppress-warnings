@@ -4,7 +4,7 @@
  * including this file, may be copied, modified, propagated, or distributed except according to the terms contained
  * in the LICENSE file.
  */
-package com.github.sebhoss.warnings;
+package de.xn__ho_hia.utils.jdt;
 
 /**
  * List of Eclipse compiler warnings which can be suppressed by the {@link SuppressWarnings} annotation.
