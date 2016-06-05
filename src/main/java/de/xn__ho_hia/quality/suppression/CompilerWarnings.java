@@ -4,7 +4,7 @@
  * including this file, may be copied, modified, propagated, or distributed except according to the terms contained
  * in the LICENSE file.
  */
-package de.xn__ho_hia.utils.jdt;
+package de.xn__ho_hia.quality.suppression;
 
 /**
  * List of Eclipse compiler warnings which can be suppressed by the {@link SuppressWarnings} annotation.

@@ -7,4 +7,4 @@
 /**
  * Constants for @SuppressWarnings annotations.
  */
-package de.xn__ho_hia.utils.jdt;
+package de.xn__ho_hia.quality.suppression;
