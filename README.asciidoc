@@ -1,5 +1,5 @@
 = Suppress-Warnings
-Sebastian Hoß <https://github.com/sebhoss[@sebhoss]>
+Sebastian Hoß <http://seb.xn--ho-hia.de/[@sebhoss]>
 :github-org: sebhoss
 :project-name: suppress-warnings
 :project-group: com.github.sebhoss
@@ -7,30 +7,61 @@ Sebastian Hoß <https://github.com/sebhoss[@sebhoss]>
 image:https://img.shields.io/maven-central/v/{project-group}/{project-name}.svg?style=flat-square["Maven Central", link="https://maven-badges.herokuapp.com/maven-central/{project-group}/{project-name}"]
 image:https://www.openhub.net/p/{project-name}/widgets/project_thin_badge.gif["Open Hub statistics", link="https://www.openhub.net/p/{project-name}"]
 image:https://img.shields.io/travis/{github-org}/{project-name}/master.svg?style=flat-square["Build Status", link="https://travis-ci.org/{github-org}/{project-name}"]
-image:https://img.shields.io/gitter/room/{github-org}/{project-name}.svg?maxAge=2592000["Gitter", link="https://gitter.im/{github-org}/{project-name}"]
+image:https://img.shields.io/badge/irc-%23metio.wtf-green.svg?style=flat-square["Chat on IRC", link="http://webchat.freenode.net/?channels=metio.wtf"]
 
-Constants for `@SuppressWarnings` annotations.
+Java utility library which contains constants for `@SuppressWarnings` annotations.
 
 
 == Usage
 
-Simply reference this module as a dependency to your POM:
+Use the `CompilerWarnings` class to suppress compiler warnings like this:
+
+[source, java]
+----
+@SuppressWarnings(CompilerWarnings.NLS)
+final String myText = "hello world!";
+----
+
+Add `de.xn__ho_hia.quality.suppression.CompilerWarnings.*` as a favorite to your IDE, e.g. use `Java > Editor > Content Assist > Favorites` in Eclipse. This allows will instruct Eclipse to auto import the constant you specified statically which reduces the code to this:
+
+[source, java]
+----
+@SuppressWarnings(NLS)
+final String myText = "hello world!";
+----
+
+
+
+=== Integration
+
+To use this project just declare the following dependency inside your POM:
 
 [source, xml]
 ----
 <dependency>
-  <groupId>com.github.sebhoss</groupId>
+  <groupId>de.xn--ho-hia.quality</groupId>
   <artifactId>suppress-warnings</artifactId>
   <version>${version.suppress-warnings}</version>
 </dependency
 ----
 
-Replace `${version.suppress-warnings}` with the http://search.maven.org/#search%7Cga%7C1%7Cg%3Acom.github.sebhoss%20a%3Asuppress-warnings[latest release].
+Replace `${version.suppress-warnings}` with the http://search.maven.org/#search%7Cga%7C1%7Cg%3Ade.xn--ho-hia.quality%20a%3Asuppress-warnings[latest release]. This project follows the http://semver.org/[semantic versioning] guidelines.
 
 
-== Development
+=== Compatibility
 
-=== License
+This project is compatible with the following Java versions:
+
+.Java compatibility
+|===
+| | 3.X.Y
+
+| Java 8
+| ✓
+|===
+
+
+== License
 
 To the extent possible under law, the author(s) have dedicated all copyright
 and related and neighboring rights to this software to the public domain
@@ -38,7 +69,3 @@ worldwide. This software is distributed without any warranty.
 
 You should have received a copy of the CC0 Public Domain Dedication along
 with this software. If not, see http://creativecommons.org/publicdomain/zero/1.0/.
-
-=== Versioning
-
-This project follows the http://semver.org/[semantic versioning] guidelines.
