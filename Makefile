@@ -30,9 +30,11 @@ docker-verify:
 
 .PHONY: release-into-local-nexus
 release-into-local-nexus: ##@release Releases all artifacts into a local nexus
-	@mvn clean deploy scm:tag -Dtag=suppress-warnings-$(timestamp) -DpushChanges=false -DskipLocalStaging=true -Drelease=local
+	@read -p "Enter release version:" version; \
+	mvn clean deploy scm:tag -Drevision=$$version -DpushChanges=false -DskipLocalStaging=true -Drelease=local
 
 .PHONY: release-into-sonatype-nexus
 release-into-sonatype-nexus: ##@release Releases all artifacts into Maven Central (through Sonatype OSSRH)
-	@mvn clean gpg:sign deploy scm:tag -Dtag=suppress-warnings-$(timestamp) -DpushChanges=false -Drelease=sonatype
+	@read -p "Enter release version:" version; \
+	mvn clean gpg:sign deploy scm:tag -Drevision=$$version -DpushChanges=false -Drelease=sonatype
 	@git push --tags origin master
