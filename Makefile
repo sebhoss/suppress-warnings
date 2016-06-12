@@ -12,20 +12,27 @@ help:
 	@echo "   3. make release               - perform the next release"
 	@echo "   4. make docker-verify         - verify the project inside a pre-defined docker container"
 
+.PHONY: sonar-analysis
 sonar-analysis:
 	# http://docs.sonarqube.org/display/SONAR/Analyzing+with+Maven
 	@mvn clean install
 	@mvn sonar:sonar -Dsonar.host.url=http://localhost:59000
 
+.PHONY: sign-waiver
 sign-waiver:
 	@gpg2 --no-version --armor --sign AUTHORS/WAIVER
 
-release:
-	@mvn release:prepare release:perform
-
+.PHONY: docker-verify
 docker-verify:
 	@docker-compose -f build/docker/build-environment.yml run --rm --user=$(UID) build
 	# findbugs likes to create these
 	@rm -rf ?/
 
-.PHONY: all help sonar-analysis sign-waiver release docker-verify
+.PHONY: release-into-local-nexus
+release-into-local-nexus: ##@release Releases all artifacts into a local nexus
+	@mvn clean deploy scm:tag -Dtag=suppress-warnings-$(timestamp) -DpushChanges=false -DskipLocalStaging=true -Drelease=local
+
+.PHONY: release-into-sonatype-nexus
+release-into-sonatype-nexus: ##@release Releases all artifacts into Maven Central (through Sonatype OSSRH)
+	@mvn clean gpg:sign deploy scm:tag -Dtag=suppress-warnings-$(timestamp) -DpushChanges=false -Drelease=sonatype
+	@git push --tags origin master
