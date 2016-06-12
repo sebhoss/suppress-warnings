@@ -11,8 +11,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <!--                                 PARENT                                  -->
+  <!--                                  PARENT                                 -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!-- https://maven.apache.org/pom.html#Inheritance -->
   <parent>
     <groupId>de.xn--ho-hia.maven.parents</groupId>
     <artifactId>maven-parents-java-stable</artifactId>
@@ -20,26 +21,42 @@
   </parent>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <!--                               INFORMATIONS                              -->
+  <!--                               COORDINATES                               -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!-- https://maven.apache.org/pom.html#Maven_Coordinates -->
   <groupId>de.xn--ho-hia.quality</groupId>
   <artifactId>suppress-warnings</artifactId>
   <version>4.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
-  <url>http://seb.xn--ho-hia.de/suppress-warnings</url>
-  <inceptionYear>2013</inceptionYear>
-  <name>Suppress Warnings</name>
-  <description>Constants for @SuppressWarnings annotations</description>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <!--                                  SOURCE                                 -->
+  <!--                               INFORMATIONS                              -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!-- https://maven.apache.org/pom.html#More_Project_Information -->
+  <name>Suppress Warnings</name>
+  <description>Constants for @SuppressWarnings annotations</description>
+  <url>http://seb.xn--ho-hia.de/suppress-warnings</url>
+  <inceptionYear>2013</inceptionYear>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                                    SCM                                  -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!-- https://maven.apache.org/pom.html#SCM -->
   <scm>
     <connection>scm:git:git://github.com/sebhoss/suppress-warnings.git</connection>
     <developerConnection>scm:git:git@github.com:sebhoss/suppress-warnings.git</developerConnection>
     <tag>master</tag>
     <url>https://github.com/sebhoss/suppress-warnings</url>
   </scm>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                             ISSUE MANAGEMENT                            -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!-- https://maven.apache.org/pom.html#Issue_Management -->
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/sebhoss/suppress-warnings/issues</url>
+  </issueManagement>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                          DISTRIBUTION MANAGEMENT                        -->
