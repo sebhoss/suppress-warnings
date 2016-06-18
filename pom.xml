@@ -59,6 +59,15 @@
   </issueManagement>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                               CI MANAGEMENT                             -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!-- https://maven.apache.org/pom.html#Continuous_Integration_Management -->
+  <ciManagement>
+    <system>Travis</system>
+    <url>https://travis-ci.org/sebhoss/suppress-warnings</url>
+  </ciManagement>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                          DISTRIBUTION MANAGEMENT                        -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!-- https://maven.apache.org/pom.html#Distribution_Management -->
