@@ -26,7 +26,7 @@
   <!-- https://maven.apache.org/pom.html#Maven_Coordinates -->
   <groupId>de.xn--ho-hia.quality</groupId>
   <artifactId>suppress-warnings</artifactId>
-  <version>${revision}</version>
+  <version>4.0.0.${revision}</version>
   <packaging>jar</packaging>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -74,7 +74,7 @@
   <!--                                PROPERTIES                               -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
-    <revision>0.0.0-SNAPSHOT</revision>
+    <revision>0-SNAPSHOT</revision>
     <skipTests>true</skipTests>
     <pit.skip>true</pit.skip>
   </properties>
