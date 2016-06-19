@@ -1,6 +1,8 @@
 # https://www.gnu.org/prep/standards/html_node/Makefile-Basics.html#Makefile-Basics
 SHELL = /bin/sh
 
+timestamp := $(shell /bin/date "+%Y%m%d%H%M%S")
+
 all: help
 
 help:
@@ -28,13 +30,15 @@ docker-verify:
 	# findbugs likes to create these
 	@rm -rf ?/
 
+.PHONY: update-parent
+display-property-updates: ##@maintenance Display property updates in all modules
+	@mvn versions:update-parent -U
+
 .PHONY: release-into-local-nexus
 release-into-local-nexus: ##@release Releases all artifacts into a local nexus
-	@read -p "Enter release version:" version; \
-	mvn clean deploy scm:tag -Drevision=$$version -DpushChanges=false -DskipLocalStaging=true -Drelease=local
+	@mvn clean deploy scm:tag -Drevision=$(timestamp) -DpushChanges=false -DskipLocalStaging=true -Drelease=local
 
 .PHONY: release-into-sonatype-nexus
 release-into-sonatype-nexus: ##@release Releases all artifacts into Maven Central (through Sonatype OSSRH)
-	@read -p "Enter release version:" version; \
-	mvn clean gpg:sign deploy scm:tag -Drevision=$$version -DpushChanges=false -Drelease=sonatype
+	@mvn clean gpg:sign deploy scm:tag -Drevision=$(timestamp) -DpushChanges=false -Drelease=sonatype
 	@git push --tags origin master
