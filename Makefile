@@ -42,5 +42,5 @@ release-into-local-nexus: ##@release Releases all artifacts into a local nexus
 
 .PHONY: release-into-sonatype-nexus
 release-into-sonatype-nexus: ##@release Releases all artifacts into Maven Central (through Sonatype OSSRH)
-	@mvn clean package gpg:sign deploy scm:tag -Prelease -Drevision=$(timestamp) -DpushChanges=false -Drelease=sonatype
+	@mvn clean deploy scm:tag -Prelease -Drevision=$(timestamp) -DpushChanges=false -Drelease=sonatype
 	@git push --tags origin master
