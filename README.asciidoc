@@ -31,7 +31,7 @@ Add `de.xn__ho_hia.quality.suppression.CompilerWarnings.*` as a favorite to your
 final String myText = "hello world!";
 ----
 
-Take a look at the link:http://www.javadoc.io/doc/com.github.sebhoss/suppress-warnings/3.0.0[JavaDoc] to see a list of all available constants. All of them contain a (short) description which should help out developers who have not seen those suppressions before. Referencing those constants instead of using plain strings will make sure that all suppressions are correct.
+Take a look at the pass:[<a href="http://www.javadoc.io/doc/de.xn--ho-hia.quality/suppress-warnings/">JavaDoc</a>] to see a list of all available constants. All of them contain a (short) description which should help out developers who have not seen those suppressions before. Referencing those constants instead of using plain strings will make sure that all suppressions are correct.
 
 === Integration
 
