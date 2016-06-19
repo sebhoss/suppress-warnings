@@ -31,8 +31,10 @@ docker-verify:
 	@rm -rf ?/
 
 .PHONY: update-parent
-display-property-updates: ##@maintenance Display property updates in all modules
-	@mvn versions:update-parent -U
+update-parent: ##@maintenance Updates the Maven parent to its latest version
+	@mvn versions:update-parent -U -DgenerateBackupPoms=false
+	@git add pom.xml
+	@git commit pom.xml -s -m 'Update to latest parent'
 
 .PHONY: release-into-local-nexus
 release-into-local-nexus: ##@release Releases all artifacts into a local nexus
