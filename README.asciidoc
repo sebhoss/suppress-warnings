@@ -70,3 +70,10 @@ worldwide. This software is distributed without any warranty.
 
 You should have received a copy of the CC0 Public Domain Dedication along
 with this software. If not, see http://creativecommons.org/publicdomain/zero/1.0/.
+
+== Mirrors
+
+* https://github.com/sebhoss/suppress-warnings
+* https://bitbucket.org/sebhoss/suppress-warnings
+* https://gitlab.com/sebastian.hoss/suppress-warnings
+* http://repo.or.cz/suppress-warnings.git
