@@ -3,6 +3,7 @@ Sebastian Hoß <http://seb.xn--ho-hia.de/[@sebhoss]>
 :github-org: sebhoss
 :project-name: suppress-warnings
 :project-group: de.xn--ho-hia.quality
+:coverity-project: 9346
 :codacy-project: a6b59a4e42104e6492cb46961b195e5e
 
 image:https://img.shields.io/badge/license-cc%20zero-000000.svg?style=flat-square["CC Zero", link="http://creativecommons.org/publicdomain/zero/1.0/"]

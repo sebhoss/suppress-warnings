@@ -36,4 +36,4 @@ env:
     # exposes 'COVERITY_SCAN_TOKEN'
     # see https://scan.coverity.com/travis_ci
     # see https://docs.travis-ci.com/user/coverity-scan/
-    - secure: "O+TJBnjp2neJX0mcXecDCgISd9R07PNp6i2q7UMGIWoTF+YRapipg7bbdvaEXMIAUTJV4Legku5UpadxGLpwjYhNJa4A+k35y7IjtivRPya2Va/tc9rHwSnXir7oKqO7k7Oh70TGSiTw4x6bFrEMJDCVMABL8dMwpLjxQRTXZIU="
+    - secure: "GNqLLgRv0EoNVAJKeUJyG/grKRPsqp2EwRxBDpOrJ2N/0tjBO7L47obCkbnP6SRWruteqicc6SC7QQXpuKFO5lAvUsYLc7dgKT2xRETQwvorarN7J0B8fWCRHXwiSkaVy7liidxw9EeUR3TSE96d5CK83A1Z3y29H+fnTAEAkmI="
