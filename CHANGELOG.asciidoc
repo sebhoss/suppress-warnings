@@ -1,0 +1,13 @@
+= Change Log
+
+All notable changes to this project will be documented in this file.
+
+== link:++https://github.com/sebhoss/suppress-warnings/compare/suppress-warnings-4.0.0-20160619211629...master++[Unreleased]
+
+== link:++https://github.com/sebhoss/suppress-warnings/compare/suppress-warnings-3.0.0...suppress-warnings-4.0.0-20160619211629++[4.0.0] - 2016-06-19
+
+
+=== Changed
+
+* Switch to groupId 'de.xn--ho-hia.utils.types'
+* Switch to continuous deployment mode
