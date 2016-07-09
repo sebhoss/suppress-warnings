@@ -84,4 +84,5 @@ with this software. If not, see http://creativecommons.org/publicdomain/zero/1.0
 * https://github.com/sebhoss/suppress-warnings
 * https://bitbucket.org/sebhoss/suppress-warnings
 * https://gitlab.com/sebastian.hoss/suppress-warnings
+* http://v2.pikacode.com/sebhoss/suppress-warnings
 * http://repo.or.cz/suppress-warnings.git
