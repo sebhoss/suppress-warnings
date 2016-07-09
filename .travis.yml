@@ -16,7 +16,7 @@ addons:
   # see https://docs.travis-ci.com/user/coverity-scan/
   coverity_scan:
     project:
-      name: "sebhoss/suppress"
+      name: "sebhoss/suppress-warnings"
       description: "Build submitted via Travis CI"
     notification_email: "metio@googlegroups.com"
     build_command_prepend: "mvn clean"
@@ -36,4 +36,4 @@ env:
     # exposes 'COVERITY_SCAN_TOKEN'
     # see https://scan.coverity.com/travis_ci
     # see https://docs.travis-ci.com/user/coverity-scan/
-    - secure: "GNqLLgRv0EoNVAJKeUJyG/grKRPsqp2EwRxBDpOrJ2N/0tjBO7L47obCkbnP6SRWruteqicc6SC7QQXpuKFO5lAvUsYLc7dgKT2xRETQwvorarN7J0B8fWCRHXwiSkaVy7liidxw9EeUR3TSE96d5CK83A1Z3y29H+fnTAEAkmI="
+    - secure: "VrNRhmGfHAZw+B1hQFmSd4k93EQNXejx5DNptcpHxHgZUIkD0djuQyyp5A9P7QeYn9MvDrB3VGFw8Z90kTAh8GPwUr3TWT7LLZ9s3sxHPI3VoqdSHl8utOR1wN7UoawcfBAyGtv/SqhE5e3L8Sb+4CHl1cO7YCf8DBFncGSnBNM="
